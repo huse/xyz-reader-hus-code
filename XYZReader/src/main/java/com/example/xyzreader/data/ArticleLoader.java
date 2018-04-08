@@ -34,7 +34,7 @@ public class ArticleLoader extends CursorLoader {
 
         int _ID = 0;
         int TITLE = 1;
-        int PUBLISHED_DATE = 2;
+        int DATE_PUBLISHED = 2;
         int AUTHOR = 3;
         int THUMB_URL = 4;
         int PHOTO_URL = 5;

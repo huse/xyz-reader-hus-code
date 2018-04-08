@@ -20,18 +20,21 @@
         android:state_pressed="true">
         <set>
             <objectAnimator
+                android:valueTo="7dp"
+                android:valueType="floatType"
                 android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueTo="@dimen/fab_press_translation_z"
-                android:valueType="floatType" />
+                 />
         </set>
     </item>
     <item>
         <set>
             <objectAnimator
-                android:duration="@android:integer/config_shortAnimTime"
-                android:propertyName="translationZ"
                 android:valueTo="0"
+                android:propertyName="translationZ"
+
+                android:duration="@android:integer/config_shortAnimTime"
+
                 android:valueType="floatType" />
         </set>
     </item>
