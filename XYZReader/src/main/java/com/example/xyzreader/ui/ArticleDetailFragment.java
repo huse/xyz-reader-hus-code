@@ -91,7 +91,7 @@ public class ArticleDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         Log.v("hhh2", "entering onCreateView ArticleDetailFragment ");
 
-        rView = inflater.inflate(R.layout.fragment_article_detail, container, true);
+        rView = inflater.inflate(R.layout.fragment_article_detail, container, false);
         ButterKnife.bind(this, rView);
 
         bookDateAuthor.setMovementMethod(new LinkMovementMethod());
