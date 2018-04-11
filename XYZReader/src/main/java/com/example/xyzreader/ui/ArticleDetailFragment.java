@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import com.android.volley.toolbox.ImageLoader;
+import com.bumptech.glide.Glide;
 import com.example.xyzreader.R;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -122,6 +123,7 @@ public class ArticleDetailFragment extends Fragment {
             body_progressbar.setVisibility(View.GONE);
         }
         bodyId++;
+
         ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                 .get(articleParser.getArticlePhotoUrl(), new ImageLoader.ImageListener() {
                     @Override
